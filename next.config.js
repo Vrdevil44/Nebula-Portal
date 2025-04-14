@@ -5,6 +5,19 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  // Disable SWC minification for Windows
+  swcMinify: false,
+  // Add experimental features
+  experimental: {
+    forceSwcTransforms: true,
+  },
+  // Ensure static export works properly
+  distDir: 'out',
+  // Add webpack configuration
+  webpack: (config, { isServer }) => {
+    // Add any necessary webpack configurations here
+    return config;
+  }
 }
 
 module.exports = nextConfig 

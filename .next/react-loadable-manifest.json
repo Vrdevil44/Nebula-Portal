@@ -1,14 +1,48 @@
 {
   "index.js -> ../components/HeroCanvas": {
-    "id": "index.js -> ../components/HeroCanvas",
+    "id": 4575,
     "files": [
-      "static/chunks/components_HeroCanvas_js.js"
+      "static/chunks/fb7d5399.44f05d5c32f14d17.js",
+      "static/chunks/877.fba353d5d9ba873f.js",
+      "static/chunks/575.98b548b3dc18bc26.js"
     ]
   },
   "project\\aurora-dreams.js -> ../../components/projects/AuroraCanvas": {
-    "id": "project\\aurora-dreams.js -> ../../components/projects/AuroraCanvas",
+    "id": 2834,
     "files": [
-      "static/chunks/components_projects_AuroraCanvas_js.js"
+      "static/chunks/834.4b84a93cf0e26a45.js"
+    ]
+  },
+  "project\\constellation.js -> ../../components/projects/StarMap": {
+    "id": 5452,
+    "files": [
+      "static/chunks/fb7d5399.44f05d5c32f14d17.js",
+      "static/chunks/365.8ddc000a6d1ee4c2.js",
+      "static/chunks/452.026810f45677526f.js"
+    ]
+  },
+  "project\\cosmic-explorer.js -> ../../components/projects/CosmicExplorerScene": {
+    "id": 5844,
+    "files": [
+      "static/chunks/fb7d5399.44f05d5c32f14d17.js",
+      "static/chunks/365.8ddc000a6d1ee4c2.js",
+      "static/chunks/877.fba353d5d9ba873f.js",
+      "static/chunks/844.08bfe270b1c45b61.js"
+    ]
+  },
+  "project\\orbit.js -> ../../components/projects/OrbitSimulation": {
+    "id": 7646,
+    "files": [
+      "static/chunks/fb7d5399.44f05d5c32f14d17.js",
+      "static/chunks/365.8ddc000a6d1ee4c2.js",
+      "static/chunks/646.5569f82054a11021.js"
+    ]
+  },
+  "project\\stellar-dashboard.js -> ../../components/projects/DashboardCharts": {
+    "id": 8073,
+    "files": [
+      "static/chunks/134.92d807f5e94c8932.js",
+      "static/chunks/73.4d522928bfe1dd2c.js"
     ]
   }
 }
