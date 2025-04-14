@@ -30,10 +30,16 @@ jobs:
       - name: Install dependencies
         run: npm ci
       
+      - name: Configure Next.js
+        run: |
+          echo "NEXT_PUBLIC_BASE_PATH=/Nebula-Portal" >> .env
+          echo "NEXT_TELEMETRY_DISABLED=1" >> .env
+      
       - name: Build
         run: npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: '/Nebula-Portal'
+          NEXT_TELEMETRY_DISABLED: 1
       
       - name: Setup Pages
         uses: actions/configure-pages@v4

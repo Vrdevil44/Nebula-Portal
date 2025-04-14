@@ -5,11 +5,11 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Disable SWC minification for Windows
+  // Disable SWC minification
   swcMinify: false,
   // Add experimental features
   experimental: {
-    forceSwcTransforms: true,
+    forceSwcTransforms: false,
   },
   // Ensure static export works properly
   distDir: 'out',
