@@ -16,6 +16,10 @@ const nextConfig = {
   // Add webpack configuration
   webpack: (config, { isServer }) => {
     // Add any necessary webpack configurations here
+    config.resolve.fallback = {
+      ...config.resolve.fallback,
+      fs: false,
+    };
     return config;
   }
 }

@@ -28,7 +28,9 @@ jobs:
           cache: 'npm'
       
       - name: Install dependencies
-        run: npm ci
+        run: |
+          npm ci
+          npm install next@canary
       
       - name: Configure Next.js
         run: |
@@ -36,10 +38,13 @@ jobs:
           echo "NEXT_TELEMETRY_DISABLED=1" >> .env
       
       - name: Build
-        run: npm run build
+        run: |
+          export NODE_OPTIONS="--max-old-space-size=4096"
+          npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: '/Nebula-Portal'
           NEXT_TELEMETRY_DISABLED: 1
+          NODE_OPTIONS: '--max-old-space-size=4096'
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
